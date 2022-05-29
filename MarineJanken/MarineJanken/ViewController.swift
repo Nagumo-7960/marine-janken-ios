@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let homeImages = UIImage(named: "marine_home")
         homeImage?.image = homeImages
+
     }
 
 

@@ -16,7 +16,6 @@
 		9BA7BF9E28426541001510AF /* MarineJankenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7BF9D28426541001510AF /* MarineJankenTests.swift */; };
 		9BA7BFA828426541001510AF /* MarineJankenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7BFA728426541001510AF /* MarineJankenUITests.swift */; };
 		9BA7BFAA28426541001510AF /* MarineJankenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7BFA928426541001510AF /* MarineJankenUITestsLaunchTests.swift */; };
-		9BA7BFB728426F82001510AF /* marine_home.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BA7BFB628426F82001510AF /* marine_home.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		9BA7BFA328426541001510AF /* MarineJankenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarineJankenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA7BFA728426541001510AF /* MarineJankenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarineJankenUITests.swift; sourceTree = "<group>"; };
 		9BA7BFA928426541001510AF /* MarineJankenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarineJankenUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		9BA7BFB628426F82001510AF /* marine_home.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = marine_home.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				9BA7BF862842653F001510AF /* AppDelegate.swift */,
-				9BA7BFB628426F82001510AF /* marine_home.jpg */,
 				9BA7BF882842653F001510AF /* SceneDelegate.swift */,
 				9BA7BF8A2842653F001510AF /* ViewController.swift */,
 				9BA7BF8C2842653F001510AF /* Main.storyboard */,
@@ -236,7 +233,6 @@
 			files = (
 				9BA7BF9328426541001510AF /* LaunchScreen.storyboard in Resources */,
 				9BA7BF9028426541001510AF /* Assets.xcassets in Resources */,
-				9BA7BFB728426F82001510AF /* marine_home.jpg in Resources */,
 				9BA7BF8E2842653F001510AF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
