@@ -8,7 +8,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var startButton: UIButton!
+    
     @IBOutlet weak var homeImage: UIImageView!
     
 
@@ -16,6 +17,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let homeImages = UIImage(named: "marine_home")
         homeImage?.image = homeImages
+        startButton.setTitle("スタート", for: .normal)
+        startButton.setTitleColor(UIColor.black, for: .normal)
+        
 
     }
 

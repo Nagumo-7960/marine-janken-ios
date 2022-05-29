@@ -20,17 +20,33 @@
                                 <rect key="frame" x="-7" y="-15" width="428" height="926"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8b-cp-AEy">
+                                <rect key="frame" x="157" y="433" width="101" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101" id="8KO-Zq-j9I"/>
+                                    <constraint firstAttribute="width" constant="101" id="94j-t5-S6X"/>
+                                    <constraint firstAttribute="height" constant="31" id="IRH-PX-ZRb"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="q8r-og-uDA"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="homeImage" destination="SjL-Fm-rBV" id="A1k-2c-gye"/>
+                        <outlet property="startButton" destination="R8b-cp-AEy" id="xE8-hw-i7v"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.037383177570092" y="83.585313174946009"/>
+            <point key="canvasLocation" x="27.536231884057973" y="83.035714285714278"/>
         </scene>
     </scenes>
     <resources>
