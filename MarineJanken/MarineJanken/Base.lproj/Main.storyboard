@@ -20,14 +20,8 @@
                                 <rect key="frame" x="-7" y="-15" width="428" height="926"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8b-cp-AEy">
-                                <rect key="frame" x="157" y="433" width="101" height="31"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="101" id="8KO-Zq-j9I"/>
-                                    <constraint firstAttribute="width" constant="101" id="94j-t5-S6X"/>
-                                    <constraint firstAttribute="height" constant="31" id="IRH-PX-ZRb"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="q8r-og-uDA"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8b-cp-AEy">
+                                <rect key="frame" x="150" y="433" width="114" height="40"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button">
                                     <backgroundConfiguration key="background">
@@ -38,6 +32,12 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R8b-cp-AEy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="389" id="f0T-Hi-fqZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R8b-cp-AEy" secondAttribute="bottom" constant="389" id="fay-IS-192"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R8b-cp-AEy" secondAttribute="trailing" constant="150" id="qKS-eb-FXV"/>
+                            <constraint firstItem="R8b-cp-AEy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="xqP-dd-HhB"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="homeImage" destination="SjL-Fm-rBV" id="A1k-2c-gye"/>
