@@ -20,8 +20,9 @@
                                 <rect key="frame" x="-7" y="-15" width="428" height="926"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8b-cp-AEy">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8b-cp-AEy">
                                 <rect key="frame" x="150" y="433" width="114" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button">
                                     <backgroundConfiguration key="background">
@@ -29,18 +30,20 @@
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knp-qT-qbs">
+                                <rect key="frame" x="0.0" y="120" width="414" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="R8b-cp-AEy" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="389" id="f0T-Hi-fqZ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="R8b-cp-AEy" secondAttribute="bottom" constant="389" id="fay-IS-192"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="R8b-cp-AEy" secondAttribute="trailing" constant="150" id="qKS-eb-FXV"/>
-                            <constraint firstItem="R8b-cp-AEy" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="150" id="xqP-dd-HhB"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="homeImage" destination="SjL-Fm-rBV" id="A1k-2c-gye"/>
+                        <outlet property="homeTitle" destination="knp-qT-qbs" id="SAs-SR-E7t"/>
                         <outlet property="startButton" destination="R8b-cp-AEy" id="xE8-hw-i7v"/>
                     </connections>
                 </viewController>

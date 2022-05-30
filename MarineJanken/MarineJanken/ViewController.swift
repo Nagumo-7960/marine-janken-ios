@@ -12,9 +12,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var homeImage: UIImageView!
     
-
+    @IBOutlet weak var homeTitle: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        homeTitle.text = "うみべのじゃんけん"
+        homeTitle.textColor = UIColor.white
+        
         let homeImages = UIImage(named: "marine_home")
         homeImage?.image = homeImages
         startButton.setTitle("スタート", for: .normal)
