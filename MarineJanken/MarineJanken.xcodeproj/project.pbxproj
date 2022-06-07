@@ -104,11 +104,11 @@
 				9BA7BF862842653F001510AF /* AppDelegate.swift */,
 				9BA7BF882842653F001510AF /* SceneDelegate.swift */,
 				9BA7BF8A2842653F001510AF /* ViewController.swift */,
+				9B5CBD61284A4F4D0080F7A9 /* BattleViewController.swift */,
 				9BA7BF8C2842653F001510AF /* Main.storyboard */,
 				9BA7BF8F28426541001510AF /* Assets.xcassets */,
 				9BA7BF9128426541001510AF /* LaunchScreen.storyboard */,
 				9BA7BF9428426541001510AF /* Info.plist */,
-				9B5CBD61284A4F4D0080F7A9 /* BattleViewController.swift */,
 			);
 			path = MarineJanken;
 			sourceTree = "<group>";
