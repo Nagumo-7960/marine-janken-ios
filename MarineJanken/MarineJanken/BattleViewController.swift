@@ -9,8 +9,11 @@ import UIKit
 
 class BattleViewController: UIViewController {
 
+    @IBOutlet weak var backGround: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let homeImages = UIImage(named: "marine_battle_field")
+        backGround?.image = homeImages
     }
 }
