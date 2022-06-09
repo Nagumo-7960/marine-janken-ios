@@ -9,16 +9,16 @@ import UIKit
 
 class BattleViewController: UIViewController {
 
-    @IBOutlet weak var backGround: UIImageView!
+    @IBOutlet weak var backGroundView: UIImageView!
     
-    @IBOutlet weak var girl: UIImageView!
+    @IBOutlet weak var girlView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let background = UIImage(named: "marine_battle_field")
-        backGround?.image = background
+        backGroundView?.image = background
         
         let beachGirl = UIImage(named: "girl_01")
-        girl?.image = beachGirl
+        girlView?.image = beachGirl
     }
 }
