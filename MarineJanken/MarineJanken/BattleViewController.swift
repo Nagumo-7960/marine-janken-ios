@@ -13,7 +13,7 @@ class BattleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let homeImages = UIImage(named: "marine_battle_field")
-        backGround?.image = homeImages
+        let background = UIImage(named: "marine_battle_field")
+        backGround?.image = background
     }
 }

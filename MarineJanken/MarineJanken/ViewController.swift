@@ -20,8 +20,8 @@ class ViewController: UIViewController {
         homeTitle.text = "うみべのじゃんけん"
         homeTitle.textColor = UIColor.white
         
-        let homeImages = UIImage(named: "marine_home")
-        homeImage?.image = homeImages
+        let background = UIImage(named: "marine_home")
+        homeImage?.image = background
         startButton.setTitle("スタート", for: .normal)
         startButton.setTitleColor(UIColor.black, for: .normal)
         
