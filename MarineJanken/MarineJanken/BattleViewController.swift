@@ -13,6 +13,8 @@ class BattleViewController: UIViewController {
     
     @IBOutlet weak var girlView: UIImageView!
     
+    @IBOutlet weak var oppBalloonView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         let background = UIImage(named: "marine_battle_field")
