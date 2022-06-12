@@ -38,16 +38,12 @@ class BattleViewController: UIViewController {
         
         guCardView.setImage(gu, for: .normal)
         guCardView.imageView?.contentMode = .scaleAspectFit
-        guCardView.contentHorizontalAlignment = .fill
-        guCardView.contentVerticalAlignment = .fill
         
-        screenWidth = view.frame.size.width
-        screenHeight = view.frame.size.height
+        chokiCardView.setImage(choki, for: .normal)
+        chokiCardView.imageView?.contentMode = .scaleAspectFit
         
-        // Buttonが画面の中央で横幅いっぱいのサイズになるように設定
-        guCardView.frame = CGRect(x:20,
-                                  y:544,
-                                  width:120,
-                                  height:120)
+        paCardView.setImage(pa, for: .normal)
+        paCardView.imageView?.contentMode = .scaleAspectFit
+        
     }
 }
