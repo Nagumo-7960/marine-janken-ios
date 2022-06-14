@@ -25,6 +25,9 @@ class BattleViewController: UIViewController {
     let choki = UIImage(named:"janken_choki")
     let pa = UIImage(named:"janken_pa")
     
+    @IBOutlet weak var oppTextView: UILabel!
+    @IBOutlet weak var myTextView: UILabel!
+    
     var screenWidth:CGFloat = 0
     var screenHeight:CGFloat = 0
     
@@ -50,6 +53,9 @@ class BattleViewController: UIViewController {
         
         let myBallon = UIImage(named: "my_balloon")
         myBallonView.image = myBallon
+        
+        oppTextView.text = "どれにしようかしら・・・"
+        myTextView.text = "どうしよう・・・"
         
     }
 }
