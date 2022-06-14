@@ -45,7 +45,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="homeImage" destination="SjL-Fm-rBV" id="A1k-2c-gye"/>
+                        <outlet property="homeImageView" destination="SjL-Fm-rBV" id="jrh-Y8-A2w"/>
                         <outlet property="homeTitle" destination="knp-qT-qbs" id="SAs-SR-E7t"/>
                         <outlet property="startButton" destination="R8b-cp-AEy" id="xE8-hw-i7v"/>
                     </connections>
@@ -61,17 +61,92 @@
                     <view key="view" contentMode="scaleToFill" id="V1J-C8-xJ1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JRe-kS-IKF">
+                                <rect key="frame" x="-7" y="-15" width="428" height="926"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GnX-Yd-Iv6">
+                                <rect key="frame" x="20" y="44" width="374" height="164"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ijc-iB-QeB">
+                                <rect key="frame" x="20" y="672" width="374" height="153"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7ag-b5-QXS">
+                                <rect key="frame" x="87" y="234" width="240" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yDL-4d-vQx">
+                                <rect key="frame" x="20" y="544" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=""/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pbJ-qC-8ZW">
+                                <rect key="frame" x="147" y="544" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=""/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aic-2p-ZPw">
+                                <rect key="frame" x="274" y="544" width="120" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title=""/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cfV-iM-IX4">
+                                <rect key="frame" x="20" y="715" width="374" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1z3-Aw-avz">
+                                <rect key="frame" x="20" y="136" width="374" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="rwd-Te-yhY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rwd-Te-yhY" firstAttribute="trailing" secondItem="Ijc-iB-QeB" secondAttribute="trailing" constant="20" id="0Ey-Fw-DN5"/>
+                            <constraint firstItem="GnX-Yd-Iv6" firstAttribute="leading" secondItem="rwd-Te-yhY" secondAttribute="leading" constant="20" id="Zm5-hz-HHC"/>
+                            <constraint firstItem="Ijc-iB-QeB" firstAttribute="leading" secondItem="rwd-Te-yhY" secondAttribute="leading" constant="20" id="ayB-Wc-At7"/>
+                            <constraint firstItem="rwd-Te-yhY" firstAttribute="trailing" secondItem="GnX-Yd-Iv6" secondAttribute="trailing" constant="20" id="dqK-Iu-ryo"/>
+                            <constraint firstItem="rwd-Te-yhY" firstAttribute="bottom" secondItem="Ijc-iB-QeB" secondAttribute="bottom" constant="5" id="lbI-VT-Xxs"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="0vy-pF-oKZ"/>
+                    <connections>
+                        <outlet property="backGroundView" destination="JRe-kS-IKF" id="7Hz-Ci-hHm"/>
+                        <outlet property="chokiCardView" destination="pbJ-qC-8ZW" id="TR5-Pe-fkk"/>
+                        <outlet property="girlView" destination="7ag-b5-QXS" id="ciA-gv-OKt"/>
+                        <outlet property="guCardView" destination="yDL-4d-vQx" id="CXs-hO-KU6"/>
+                        <outlet property="myBallonView" destination="Ijc-iB-QeB" id="8zN-al-rpA"/>
+                        <outlet property="myTextView" destination="cfV-iM-IX4" id="rgo-oe-ZbO"/>
+                        <outlet property="oppBalloonView" destination="GnX-Yd-Iv6" id="jWL-gN-k6Y"/>
+                        <outlet property="oppTextView" destination="1z3-Aw-avz" id="PXY-9d-ppR"/>
+                        <outlet property="paCardView" destination="aic-2p-ZPw" id="JJH-mU-fSR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ucN-lX-VXG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="741" y="83"/>
+            <point key="canvasLocation" x="740.57971014492762" y="82.366071428571431"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

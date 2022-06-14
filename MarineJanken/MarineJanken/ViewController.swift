@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var startButton: UIButton!
     
-    @IBOutlet weak var homeImage: UIImageView!
+    @IBOutlet weak var homeImageView: UIImageView!
     
     @IBOutlet weak var homeTitle: UILabel!
     
@@ -20,8 +20,8 @@ class ViewController: UIViewController {
         homeTitle.text = "うみべのじゃんけん"
         homeTitle.textColor = UIColor.white
         
-        let homeImages = UIImage(named: "marine_home")
-        homeImage?.image = homeImages
+        let background = UIImage(named: "marine_home")
+        homeImageView?.image = background
         startButton.setTitle("スタート", for: .normal)
         startButton.setTitleColor(UIColor.black, for: .normal)
         
