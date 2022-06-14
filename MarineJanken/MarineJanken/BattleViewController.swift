@@ -45,5 +45,11 @@ class BattleViewController: UIViewController {
         paCardView.setImage(pa, for: .normal)
         paCardView.imageView?.contentMode = .scaleAspectFit
         
+        let oppBalloon = UIImage(named: "opp_balloon")
+        oppBalloonView.image = oppBalloon
+        
+        let myBallon = UIImage(named: "my_balloon")
+        myBallonView.image = myBallon
+        
     }
 }
