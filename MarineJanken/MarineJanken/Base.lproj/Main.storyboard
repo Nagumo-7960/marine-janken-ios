@@ -136,22 +136,24 @@
                         <outlet property="oppBalloonView" destination="GnX-Yd-Iv6" id="jWL-gN-k6Y"/>
                         <outlet property="oppTextView" destination="1z3-Aw-avz" id="PXY-9d-ppR"/>
                         <outlet property="paCardView" destination="aic-2p-ZPw" id="JJH-mU-fSR"/>
+                        <segue destination="xHt-AL-XTl" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Rhg-DO-si3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ucN-lX-VXG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="740.57971014492762" y="82.366071428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Battle Result View Controller-->
         <scene sceneID="wem-HH-zIX">
             <objects>
-                <viewController id="xHt-AL-XTl" sceneMemberID="viewController">
+                <viewController id="xHt-AL-XTl" customClass="BattleResultViewController" customModule="MarineJanken" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zJp-Oa-oqq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="mRv-Gk-ph9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="LrQ-OB-ztz"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QfE-nZ-fAN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
