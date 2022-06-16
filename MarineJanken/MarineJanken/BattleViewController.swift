@@ -28,6 +28,15 @@ class BattleViewController: UIViewController {
     @IBOutlet weak var oppTextView: UILabel!
     @IBOutlet weak var myTextView: UILabel!
     
+    @IBAction func GuButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "toBattleResult", sender: nil)
+    }
+    @IBAction func ChokiButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "toBattleResult", sender: nil)
+    }
+    @IBAction func PaButton(_ sender: Any) {
+        self.performSegue(withIdentifier: "toBattleResult", sender: nil)
+    }
     var screenWidth:CGFloat = 0
     var screenHeight:CGFloat = 0
     
