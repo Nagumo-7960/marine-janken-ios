@@ -37,6 +37,14 @@ class BattleViewController: UIViewController {
     @IBAction func PaButton(_ sender: Any) {
         self.performSegue(withIdentifier: "toBattleResult", sender: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.identifier == "toBattleResult" {
+               let nextVC = segue.destination as! BattleResultViewController
+               nextVC.jankenHands = "gu"
+           }
+       }
+    
     var screenWidth:CGFloat = 0
     var screenHeight:CGFloat = 0
     

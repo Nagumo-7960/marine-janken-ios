@@ -8,10 +8,14 @@
 import UIKit
 
 class BattleResultViewController: UIViewController {
-
+    
+    var jankenHands = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(jankenHands)
     }
+    
+
 
 }
