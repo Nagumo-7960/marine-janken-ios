@@ -50,7 +50,19 @@ class BattleResultViewController: UIViewController {
         let myBallon = UIImage(named: "my_balloon")
         myBallonView.image = myBallon
         
-        oppHandView.image = gu
+        oppHand = oppHands.randomElement()!
+        
+        switch oppHand{
+        case "gu":
+            oppHandView.image = gu
+        case "choki" :
+            oppHandView.image = choki
+        case "pa" :
+            oppHandView.image = pa
+        default:
+            oppHandView.image = gu
+        }
+        
         switch jankenHands{
         case "gu":
             myHandView.image = gu
@@ -68,7 +80,7 @@ class BattleResultViewController: UIViewController {
     }
     
     func battleResultCheck(hand:String) -> Bool{
-        oppHand = oppHands.randomElement()!
+        
         return true
     }
 
