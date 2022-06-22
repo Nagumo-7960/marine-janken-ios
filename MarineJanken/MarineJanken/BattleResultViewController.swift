@@ -38,6 +38,7 @@ class BattleResultViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(jankenHands)
+        
         let background = UIImage(named: "marine_battle_field")
         backGroundView?.image = background
         
@@ -51,6 +52,19 @@ class BattleResultViewController: UIViewController {
         myBallonView.image = myBallon
         
         oppHand = oppHands.randomElement()!
+        
+        if(battleResultCheck()=="you_win"){
+            oppTextView.text = "水着のお姉さん「私の負けね・・・」"
+            myTextView.text = "勝った！"
+        }
+        if(battleResultCheck()=="draw"){
+            oppTextView.text = "水着のお姉さん「あいこね・・・」"
+            myTextView.text = "もう1回！"
+        }
+        if(battleResultCheck()=="you_lose"){
+            oppTextView.text = "水着のお姉さん「私の勝ちね・・・」"
+            myTextView.text = "負けちゃった・・・"
+        }
         
         switch oppHand{
         case "gu":
@@ -74,14 +88,43 @@ class BattleResultViewController: UIViewController {
             myHandView.image = gu
         }
         
-        
-        oppTextView.text = "どれにしようかしら・・・"
-        myTextView.text = "どうしよう・・・"
     }
     
-    func battleResultCheck(hand:String) -> Bool{
-        
-        return true
+    func battleResultCheck() -> String{
+        if(jankenHands=="gu"){
+            if(oppHand=="gu"){
+                return "draw"
+            }
+            if(oppHand=="choki"){
+                return "you_win"
+            }
+            if(oppHand=="pa"){
+                return "you_lose"
+            }
+        }
+        if(jankenHands=="choki"){
+            if(oppHand=="gu"){
+                return "you_lose"
+            }
+            if(oppHand=="choki"){
+                return "draw"
+            }
+            if(oppHand=="pa"){
+                return "you_win"
+            }
+        }
+        if(jankenHands=="pa"){
+            if(oppHand=="gu"){
+                return "you_win"
+            }
+            if(oppHand=="choki"){
+                return "you_lose"
+            }
+            if(oppHand=="pa"){
+                return "draw"
+            }
+        }
+        return "you_win"
     }
 
 
