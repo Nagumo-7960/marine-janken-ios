@@ -7,6 +7,8 @@
 
 import UIKit
 
+var selectHand = ""
+
 class BattleViewController: UIViewController {
     
     @IBOutlet weak var backGroundView: UIImageView!
@@ -27,6 +29,26 @@ class BattleViewController: UIViewController {
     
     @IBOutlet weak var oppTextView: UILabel!
     @IBOutlet weak var myTextView: UILabel!
+    
+    @IBAction func GuButton(_ sender: Any) {
+        selectHand = "gu"
+        self.performSegue(withIdentifier: "toBattleResult", sender: nil)
+    }
+    @IBAction func ChokiButton(_ sender: Any) {
+        selectHand = "choki"
+        self.performSegue(withIdentifier: "toBattleResult", sender: nil)
+    }
+    @IBAction func PaButton(_ sender: Any) {
+        selectHand = "pa"
+        self.performSegue(withIdentifier: "toBattleResult", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+           if segue.identifier == "toBattleResult" {
+               let nextVC = segue.destination as! BattleResultViewController
+               nextVC.jankenHands = selectHand
+           }
+       }
     
     var screenWidth:CGFloat = 0
     var screenHeight:CGFloat = 0

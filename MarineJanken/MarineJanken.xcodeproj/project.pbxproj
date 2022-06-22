@@ -17,6 +17,7 @@
 		9BA7BF9E28426541001510AF /* MarineJankenTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7BF9D28426541001510AF /* MarineJankenTests.swift */; };
 		9BA7BFA828426541001510AF /* MarineJankenUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7BFA728426541001510AF /* MarineJankenUITests.swift */; };
 		9BA7BFAA28426541001510AF /* MarineJankenUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BA7BFA928426541001510AF /* MarineJankenUITestsLaunchTests.swift */; };
+		9BB6BB9C285A0C7D00B55608 /* BattleResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BB6BB9B285A0C7D00B55608 /* BattleResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		9BA7BFA328426541001510AF /* MarineJankenUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MarineJankenUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BA7BFA728426541001510AF /* MarineJankenUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarineJankenUITests.swift; sourceTree = "<group>"; };
 		9BA7BFA928426541001510AF /* MarineJankenUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarineJankenUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9BB6BB9B285A0C7D00B55608 /* BattleResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BattleResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				9BA7BF882842653F001510AF /* SceneDelegate.swift */,
 				9BA7BF8A2842653F001510AF /* ViewController.swift */,
 				9B5CBD61284A4F4D0080F7A9 /* BattleViewController.swift */,
+				9BB6BB9B285A0C7D00B55608 /* BattleResultViewController.swift */,
 				9BA7BF8C2842653F001510AF /* Main.storyboard */,
 				9BA7BF8F28426541001510AF /* Assets.xcassets */,
 				9BA7BF9128426541001510AF /* LaunchScreen.storyboard */,
@@ -262,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B5CBD62284A4F4D0080F7A9 /* BattleViewController.swift in Sources */,
+				9BB6BB9C285A0C7D00B55608 /* BattleResultViewController.swift in Sources */,
 				9BA7BF8B2842653F001510AF /* ViewController.swift in Sources */,
 				9BA7BF872842653F001510AF /* AppDelegate.swift in Sources */,
 				9BA7BF892842653F001510AF /* SceneDelegate.swift in Sources */,
