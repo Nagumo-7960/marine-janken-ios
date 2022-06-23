@@ -210,6 +210,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="backToBattle:" destination="xHt-AL-XTl" eventType="touchUpInside" id="XNm-Dr-cpo"/>
+                                    <segue destination="rVU-0h-vvs" kind="presentation" identifier="toBattle" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="z3n-4l-YCi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -240,6 +241,9 @@
             <point key="canvasLocation" x="1444.9275362318842" y="82.366071428571431"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="z3n-4l-YCi"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
