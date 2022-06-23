@@ -13,6 +13,9 @@ class BattleResultViewController: UIViewController {
     
     @IBOutlet weak var girlView: UIImageView!
     
+    @IBAction func backToBattle(_ sender: Any) {
+        
+    }
     @IBOutlet weak var oppBalloonView: UIImageView!
     @IBOutlet weak var myBallonView: UIImageView!
     
