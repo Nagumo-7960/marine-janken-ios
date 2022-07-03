@@ -40,6 +40,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzO-z0-ayr">
+                                <rect key="frame" x="20" y="35" width="79" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="" image="setting"/>
+                                <connections>
+                                    <segue destination="qiC-Oa-e9W" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="VFS-ka-7ib"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -256,11 +265,27 @@
             </objects>
             <point key="canvasLocation" x="1444.9275362318842" y="82.366071428571431"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="r3h-Bn-Dqz">
+            <objects>
+                <viewController id="qiC-Oa-e9W" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HzG-io-qcA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="49Z-it-Qrz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="crN-yd-hUj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-700" y="82"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Grk-9b-PWQ"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="setting" width="640" height="640"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
