@@ -265,10 +265,10 @@
             </objects>
             <point key="canvasLocation" x="1444.9275362318842" y="82.366071428571431"/>
         </scene>
-        <!--View Controller-->
+        <!--Setting View Controller-->
         <scene sceneID="r3h-Bn-Dqz">
             <objects>
-                <viewController id="qiC-Oa-e9W" sceneMemberID="viewController">
+                <viewController id="qiC-Oa-e9W" customClass="SettingViewController" customModule="MarineJanken" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HzG-io-qcA">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
