@@ -8,6 +8,8 @@
 import UIKit
 
 class SettingViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    var settingCollectionView: UICollectionView!
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 1
     }
@@ -17,15 +19,27 @@ class SettingViewController: UIViewController, UICollectionViewDataSource, UICol
         return cell
     }
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // CollectionViewを生成
+        let layout = UICollectionViewFlowLayout()
+        settingCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
+        settingCollectionView.register(SettingCell.self, forCellWithReuseIdentifier: "cell")
+        settingCollectionView.delegate = self
+        settingCollectionView.dataSource = self
+        settingCollectionView.backgroundColor = UIColor.white
+    }
+}
 
-        // Do any additional setup after loading the view.
+class SettingCell:UICollectionViewCell{
+    required init(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)!
     }
     
-    class CharactorCell:UICollectionViewCell{
+    override init(frame: CGRect) {
+        super.init(frame: frame)
         
     }
-
 }
