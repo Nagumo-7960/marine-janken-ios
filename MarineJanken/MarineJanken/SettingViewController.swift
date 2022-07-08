@@ -11,11 +11,12 @@ class SettingViewController: UIViewController, UICollectionViewDataSource, UICol
     var settingCollectionView: UICollectionView!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        cell.backgroundColor = .blue
         return cell
     }
     
@@ -30,6 +31,8 @@ class SettingViewController: UIViewController, UICollectionViewDataSource, UICol
         settingCollectionView.delegate = self
         settingCollectionView.dataSource = self
         settingCollectionView.backgroundColor = UIColor.white
+        
+        self.view.addSubview(settingCollectionView)
     }
 }
 
