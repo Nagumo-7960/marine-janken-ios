@@ -24,6 +24,8 @@ class SettingViewController: UIViewController, UICollectionViewDataSource, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let width = UIScreen.main.bounds.size.width
+        let height = UIScreen.main.bounds.size.height
         // CollectionViewを生成
         let layout = UICollectionViewFlowLayout()
         settingCollectionView = UICollectionView(frame: self.view.frame, collectionViewLayout: layout)
@@ -33,6 +35,12 @@ class SettingViewController: UIViewController, UICollectionViewDataSource, UICol
         settingCollectionView.backgroundColor = UIColor.white
         
         self.view.addSubview(settingCollectionView)
+        
+        layout.itemSize = CGSize(width: (width/2)-10, height: (width/2)-10)
+        layout.minimumInteritemSpacing = 5
+        layout.minimumLineSpacing = 30
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
+        settingCollectionView.collectionViewLayout = layout
     }
 }
 
