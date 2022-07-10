@@ -11,7 +11,7 @@ class SettingViewController: UIViewController, UICollectionViewDataSource, UICol
     var settingCollectionView: UICollectionView!
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -41,6 +41,7 @@ class SettingViewController: UIViewController, UICollectionViewDataSource, UICol
         layout.minimumLineSpacing = 30
         layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 0, right: 5)
         settingCollectionView.collectionViewLayout = layout
+        
     }
 }
 
@@ -51,6 +52,6 @@ class SettingCell:UICollectionViewCell{
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        
+        self.layer.cornerRadius = 10
     }
 }
